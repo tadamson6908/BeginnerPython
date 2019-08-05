@@ -11,27 +11,32 @@ from functions import even_or_odd as eo
 
 def countWords(file):
     """
-
-    :return:
+    Count words to url file
+    :param file: url to file
+    :return: words from file in an list
     """
-    #file = "http://icarus.cs.weber.edu/~hvalle/hafb/words.txt"
+    data = []
     with urlopen(file) as story:
-        count = 0
-        numWords = {}
+
         for line in story:
             line = line.decode("utf-8")
-            #print(line)
             words = line.split()
             for word in words:
-                if word in numWords:
-                    numWords[word] += 1
-                else:
-                    numWords[word] = 1
-        for item in numWords:
-            print(item, "=>", numWords[item])
+                data.append(word)
+    return data
+
+def print_items(items):
+    """
+    Prints items in a list
+    :param items: An input list
+    :return:
+    """
+    for item in items:
+        print(item)
 
 if __name__ == "__main__":
-    countWords()
+    words = countWords("http://icarus.cs.weber.edu/~hvalle/hafb/words.txt")
+    print_items(words)
     exit(0)
 
 
