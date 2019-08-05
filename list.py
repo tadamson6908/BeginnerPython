@@ -22,5 +22,5 @@ counter = 0
 while counter != 3:
     names.append(input("Enter name: "))
     counter += 1
-
 print(names)
+
