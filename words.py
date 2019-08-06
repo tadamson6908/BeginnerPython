@@ -17,7 +17,6 @@ def countWords(file):
     """
     data = []
     with urlopen(file) as story:
-
         for line in story:
             line = line.decode("utf-8")
             words = line.split()
@@ -34,9 +33,20 @@ def print_items(items):
     for item in items:
         print(item)
 
-if __name__ == "__main__":
+
+def main():
+    """
+    Test functions in class
+    :return:
+    """
     words = countWords("http://icarus.cs.weber.edu/~hvalle/hafb/words.txt")
     print_items(words)
+
+
+
+
+if __name__ == "__main__":
+    main();
     exit(0)
 
 
