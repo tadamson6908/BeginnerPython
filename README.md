@@ -17,3 +17,15 @@ This is an introduction to python.
     -Optional parameters
 -Learn about Tuples
 -Learned more about strings
+
+
+## Day 3 Summary
+- Completed our discussion on collection
+    - List
+    - Dictionaries
+    - Strings
+    - Tuples
+    - Range
+    - Sets
+Basics of exceptions: **try, except, throw**
+-Comprehensions
