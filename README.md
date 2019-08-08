@@ -27,5 +27,5 @@ This is an introduction to python.
     - Tuples
     - Range
     - Sets
-Basics of exceptions: **try, except, throw**
+-Basics of exceptions: **try, except, throw**
 -Comprehensions
